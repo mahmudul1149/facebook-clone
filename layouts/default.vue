@@ -1,7 +1,12 @@
 <template>
+
   <div>
-     <Header-vue/>
-    <Nuxt/>
+    <Header-vue />
+
+    <div >
+      <Nuxt class="nuxt-container" />
+    </div>
+
   </div>
 </template>
 
@@ -14,11 +19,15 @@ export default {
 }
 </script>
 
-<style>
-* {
-  padding: 0;
-  margin: 0;
-
+<style   >
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
+
+
+
+.nuxt-container {
+ margin-top: 60px;
+}
 </style>
