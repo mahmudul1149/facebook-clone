@@ -39,6 +39,7 @@
     </li>
    </ul>
     </div>
+
   </div>
 </template>
 
@@ -49,7 +50,7 @@ export default {
 </script>
  
 <style lang="scss">
-@import "../assets/scss/variable";
+
 .left-sidebars
 ul li {
   display: flex;
@@ -76,7 +77,6 @@ ul li img {
   border-radius: 50%;
 
 }
-h1 {
- color:  $base-color ;
-}
+
+
 </style>

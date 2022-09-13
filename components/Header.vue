@@ -165,9 +165,9 @@
               </svg>
             </nuxt-link>
           </li>
-          <button class="btn">
+          <div class="btn">
             <img src="~/assets/image/profile.png" alt="" class="profile" />
-          </button>
+          </div>
         </ul>
       </div>
     </header>
@@ -200,6 +200,7 @@ li {
   align-items: center;
   justify-content: space-between;
   height: 60px;
+  z-index: 9999;
   background: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 

@@ -4,10 +4,8 @@
        <div class="left-sidebar">
          <leftsidebarVue></leftsidebarVue>
        </div>
-       <div class="feed-sidebar mt-3">
-         <div class="text">
-      
-         </div>
+       <div class="feed-sidebar mt-2">
+         <PostpageVue></PostpageVue>
        </div>
        <div class="right-sidebar">
 
@@ -18,14 +16,18 @@
  
  <script>
  import leftsidebarVue from "../components/leftsidebar.vue";
+import PostpageVue from '../components/Postpage.vue';
+ 
  export default {
    components: {
      leftsidebarVue,
+     PostpageVue,
    },
  };
  </script>
  <style lang="scss" scoped>
- @import "../assets/scss/mixins.scss";
+
+
   .feed {
  
    height: 100vh;
@@ -43,7 +45,7 @@
      }
      .feed-sidebar {
        margin: 0 auto;
-       width: 30%;
+       width: 35%;
  
      }
      .right-sidebar {
