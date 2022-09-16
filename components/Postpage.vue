@@ -101,7 +101,7 @@ export default {};
     gap: 0.3rem;
 
     .box {
-      width: 130px;
+      width: 150px;
       height: 220px;
       display: flex;
       flex-direction: column;
