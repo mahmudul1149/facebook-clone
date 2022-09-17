@@ -8,7 +8,12 @@
         <PostpageVue></PostpageVue>
         <createpost-vue></createpost-vue>
       </div>
-      <div class="right-sidebar"></div>
+      <div class="right-sidebar">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
+        atque nulla laboriosam odio voluptatem aspernatur, libero quibusdam
+        sapiente nesciunt. Porro quia facilis aspernatur eius quis, fugiat
+        dolores sequi! Ab, ducimus.
+      </div>
     </div>
   </div>
 </template>
@@ -40,7 +45,7 @@ export default {
     }
     .feed-sidebar {
       margin: 0 auto;
-      width: 35%;
+      width: 50%;
     }
     .right-sidebar {
       width: 20%;
