@@ -296,4 +296,9 @@ export default {
   background-color: rgba(99, 96, 96, 0.4);
   z-index: 9999;
 }
+@media screen and (max-width: 500px) {
+  .signup {
+    width: 350px;
+  }
+}
 </style>

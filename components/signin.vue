@@ -177,4 +177,9 @@ export default {
     }
   }
 }
+@media screen and (max-width: 500px) {
+  .signin-group {
+    width: 350px;
+  }
+}
 </style>

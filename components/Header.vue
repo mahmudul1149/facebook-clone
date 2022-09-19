@@ -23,13 +23,7 @@
           <button class="btn btn-search">
             <svg
               class="svg-icon"
-              style="
-                width: 20;
-                height: 20;
-                vertical-align: middle;
-                fill: currentColor;
-                overflow: hidden;
-              "
+              style="width: 20; height: 20; vertical-align: middle; fill: #333"
               viewBox="0 0 1024 1024"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -239,8 +233,7 @@ li {
   }
 
   .btn-search {
-    background: #f0f2f5;
-    padding: 0.6rem;
+    padding: 0.7rem;
     border-radius: 50%;
   }
 
