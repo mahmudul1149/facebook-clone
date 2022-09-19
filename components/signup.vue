@@ -299,6 +299,16 @@ export default {
 @media screen and (max-width: 500px) {
   .signup {
     width: 350px;
+    .signup-group {
+      .gender {
+        .flex-items {
+          gap: 0.3rem;
+          .form-control {
+            gap: 0.5rem;
+          }
+        }
+      }
+    }
   }
 }
 </style>
