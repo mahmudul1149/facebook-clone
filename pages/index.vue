@@ -62,32 +62,39 @@
         <div class="text-center">
           <ul>
             <li>
-              <router-link to="/signup" class="btn btn-primary"
-                >Create New Account</router-link
-              >
+              <button @click="showSignup" class="btn btn-primary">
+                Create New Account
+              </button>
             </li>
           </ul>
         </div>
       </div>
     </div>
     <signin-vue @toggole-order-form="showModal" v-if="show"></signin-vue>
+    <signup-vue v-if="visible" @toggle-order-form="showSignup"></signup-vue>
   </div>
 </template>
 
 <script>
 import signinVue from "~/components/signin.vue";
+import signupVue from "~/components/signup.vue";
 export default {
   components: {
     signinVue,
+    signupVue,
   },
   data() {
     return {
       show: false,
+      visible: false,
     };
   },
   methods: {
     showModal() {
       this.show = !this.show;
+    },
+    showSignup() {
+      this.visible = !this.visible;
     },
   },
 };
