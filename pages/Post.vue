@@ -7,6 +7,7 @@
       <div class="feed-sidebar mt-2">
         <PostpageVue></PostpageVue>
         <createpost-vue></createpost-vue>
+        <post-item-vue></post-item-vue>
       </div>
       <div class="right-sidebar"></div>
     </div>
@@ -17,18 +18,20 @@
 import leftsidebarVue from "../components/leftsidebar.vue";
 import createpostVue from "../components/createpost.vue";
 import PostpageVue from "../components/Postpage.vue";
+import postItemVue from "../components/postItem.vue";
 
 export default {
   components: {
     leftsidebarVue,
     PostpageVue,
     createpostVue,
+    postItemVue,
   },
 };
 </script>
 <style lang="scss" scoped>
 .feed {
-  height: 100vh;
+  height: 100%;
   .container {
     display: flex;
     justify-content: space-between;
@@ -77,6 +80,12 @@ export default {
   }
   .feed-sidebar {
     width: 100% !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .feed-sidebar {
+    width: 350px !important;
+    margin: auto !important;
   }
 }
 </style>

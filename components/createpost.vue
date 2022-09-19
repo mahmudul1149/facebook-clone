@@ -144,4 +144,11 @@ export default {};
     }
   }
 }
+@media screen and (max-width: 800px) {
+  .crete-post {
+    button:last-child {
+      display: none;
+    }
+  }
+}
 </style>

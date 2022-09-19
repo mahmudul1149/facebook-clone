@@ -233,6 +233,7 @@ li {
   }
 
   .btn-search {
+    background: #f0f2f5;
     padding: 0.7rem;
     border-radius: 50%;
   }
@@ -288,6 +289,17 @@ li {
 @media screen and (max-width: 900px) {
   .main-link {
     display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header {
+    .search-box {
+      width: 140px;
+      margin: 0 2px;
+      input {
+        font-size: 0.7rem;
+      }
+    }
   }
 }
 </style>

@@ -204,4 +204,14 @@ export default {};
     }
   }
 }
+@media screen and (max-width: 800px) {
+  .post-page {
+    .story {
+      margin-top: 1rem;
+      .box:last-child {
+        display: none;
+      }
+    }
+  }
+}
 </style>
