@@ -265,14 +265,9 @@ export default {
     }
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .post {
     .items {
-      .show-react {
-        a {
-          display: none;
-        }
-      }
       .react-btn {
         padding: 0.5rem 0;
         margin: 0.5rem 1rem;
@@ -280,7 +275,7 @@ export default {
         .btn-react,
         .btn-comment,
         .btn-share {
-          padding: 0.4rem 0;
+          padding: 0.4rem 0.3rem;
 
           &:hover {
             background: #e7e3e1;

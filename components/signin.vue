@@ -18,11 +18,13 @@
                 type="email"
                 placeholder="Email address or phone number"
                 v-model="user.email"
+                required
               />
               <input
                 type="password"
                 placeholder="Password"
                 v-model="user.password"
+                required
               />
               <div class="flex-check">
                 <div class="check">
@@ -136,6 +138,7 @@ export default {
     padding: 5px;
     background: #dadde1;
     border-radius: 50%;
+    cursor: pointer;
   }
   .title {
     font-family: Verdana, Geneva, Tahoma, sans-serif;

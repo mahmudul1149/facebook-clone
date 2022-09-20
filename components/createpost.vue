@@ -238,7 +238,7 @@
               <span class="title">Md Mahmudul islam</span>
             </div>
           </div>
-          <p>I am frontend developer</p>
+          <p>I am a web developer</p>
 
           <div class="react-btn">
             <button class="btn btn-react">

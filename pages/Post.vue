@@ -9,7 +9,9 @@
         <createpost-vue></createpost-vue>
         <post-item-vue></post-item-vue>
       </div>
-      <div class="right-sidebar"></div>
+      <div class="right-sidebar mt-2">
+        <rightsidebar-vue></rightsidebar-vue>
+      </div>
     </div>
   </div>
 </template>
@@ -19,6 +21,7 @@ import leftsidebarVue from "../components/leftsidebar.vue";
 import createpostVue from "../components/createpost.vue";
 import PostpageVue from "../components/Postpage.vue";
 import postItemVue from "../components/postItem.vue";
+import rightsidebarVue from "../components/rightsidebar.vue";
 
 export default {
   components: {
@@ -26,6 +29,7 @@ export default {
     PostpageVue,
     createpostVue,
     postItemVue,
+    rightsidebarVue,
   },
 };
 </script>
@@ -46,7 +50,7 @@ export default {
       width: 50%;
     }
     .right-sidebar {
-      width: 20%;
+      width: 18%;
       right: 0;
       position: fixed;
       margin-left: 2rem !important;
@@ -82,7 +86,7 @@ export default {
     width: 100% !important;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .feed-sidebar {
     width: 350px !important;
     margin: auto !important;

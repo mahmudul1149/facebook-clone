@@ -46,7 +46,7 @@
       </div>
       <div class="box">
         <img
-          src="http://searchengineland.com/figz/wp-content/seloads/2015/05/sundar-pichai-2-1920-800x450.jpg"
+          src="https://img-cdn.inc.com/image/upload/w_1920,h_1080,c_fill/images/panoramic/Sundar-Pichai_507899_crlwze.jpg"
           alt=""
         />
         <button class="btn btnDiv-2">
@@ -112,6 +112,9 @@ export default {};
       border-top-right-radius: 10px;
       cursor: pointer;
       position: relative;
+      &:hover {
+        transform: scale(1.01);
+      }
 
       img {
         width: 100%;

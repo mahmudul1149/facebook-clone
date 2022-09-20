@@ -1,4 +1,5 @@
 import items from "../data/items";
+import firebase from "firebase/compat/app";
 export const state = () => ({
   items: null,
   user: [],
@@ -7,6 +8,9 @@ export const state = () => ({
 export const getters = {
   items(state) {
     return state.items;
+  },
+  isUserAuth(state) {
+    return !state.user;
   },
 };
 
@@ -31,5 +35,14 @@ export const actions = {
   initItems({ commit }) {
     // make request
     commit("setItems", items);
+  },
+  authAction({ commit }) {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        commit("setUser", user);
+      } else {
+        commit("setUser", null);
+      }
+    });
   },
 };

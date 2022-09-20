@@ -7,7 +7,7 @@ export default [
     postUrl:
       "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-6/276280550_1702618383419369_4455634079149006924_n.jpg?stp=dst-jpg_s526x395&_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=j90iikHELH8AX-dfaf-&_nc_ht=scontent.frjh1-1.fna&oh=00_AT8jD5nCvXEjNqlzCDMIpoj5-ZchZ4i-CyAUHCI7Qnf0_A&oe=632C64B2",
     postTime: "September 17 at 2:24 PM",
-    react: "You, Md Almahmud and 49 others",
+    react: "121",
     comment: "36 Comments",
   },
   {
@@ -67,7 +67,7 @@ export default [
     postUrl:
       "https://scontent.frjh1-1.fna.fbcdn.net/v/t1.6435-9/125982981_1332071593807385_8869308785745388164_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rYPAZLN7xqcAX8ncU38&_nc_ht=scontent.frjh1-1.fna&oh=00_AT_r0e6O_MiDMqIwoXI7jxbcTsUSWAitBsdISPxwPmEDGw&oe=634D3970",
     postTime: "September 17 at 2:24 PM",
-    react: "You, Md Juel and 49 others",
+    react: "153",
     comment: "50 Comments",
   },
   {
