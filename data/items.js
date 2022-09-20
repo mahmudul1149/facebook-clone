@@ -7,6 +7,8 @@ export default [
     postUrl:
       "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-6/276280550_1702618383419369_4455634079149006924_n.jpg?stp=dst-jpg_s526x395&_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=j90iikHELH8AX-dfaf-&_nc_ht=scontent.frjh1-1.fna&oh=00_AT8jD5nCvXEjNqlzCDMIpoj5-ZchZ4i-CyAUHCI7Qnf0_A&oe=632C64B2",
     postTime: "September 17 at 2:24 PM",
+    react: "You, Md Almahmud and 49 others",
+    comment: "36 Comments",
   },
   {
     id: 2,
@@ -17,6 +19,8 @@ export default [
       "https://scontent.frjh1-1.fna.fbcdn.net/v/t31.18172-8/14195212_1205887539469019_7859910814621200304_o.jpg?stp=dst-jpg_p180x540&_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=r6nQTvkMCicAX8Ir1WN&_nc_ht=scontent.frjh1-1.fna&oh=00_AT_7Hpaaa2ZDMs7_AvuZ1GiKccERcEbX2aCOnfr7KrwJwQ&oe=634C088A",
     postTitle: "Mark is live with developers and entrepreneurs in Lagos!",
     postTime: "September 8, 2016",
+    react: "3.3K",
+    comment: "550 Comments",
   },
   {
     id: 3,
@@ -27,6 +31,8 @@ export default [
       "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-6/306282243_1213154622801466_7418655561323028093_n.jpg?stp=dst-jpg_s640x640&_nc_cat=108&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=Xw63vlYDC3oAX-Qhn8X&tn=JczOwTBlij8GpJHN&_nc_ht=scontent.frjh1-1.fna&oh=00_AT8mOX3XshoOZqWCBgHPMxMFU9XXGDcxNQ7gHihufNy94A&oe=632C3CB1",
     postTitle: "Santorini Island, Greece",
     postTime: "November 18 at 3:33 PM",
+    react: "1.3K",
+    comment: "420 Comments",
   },
   {
     id: 4,
@@ -38,6 +44,8 @@ export default [
     postTitle:
       "It is with sadness that we hear of the death of Her Majesty The Queen. Over the last seven decades the collegiate University has been honoured by a close association with The Queen, and we give thanks for her 70 years’ of service to the nation.",
     postTime: "November 8 at 10:33 PM",
+    react: "5.5K",
+    comment: "950 Comments",
   },
   {
     id: 5,
@@ -48,6 +56,8 @@ export default [
       "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-6/307276751_1766525103733476_9065743946903159045_n.jpg?stp=dst-jpg_s640x640&_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=CgBL8C1iQjEAX8M-X1t&_nc_ht=scontent.frjh1-1.fna&oh=00_AT9UA9C0IpL4yvE7J4N5mCwegdbaUZM8fdWtscH2_LPq2w&oe=632CE181",
     postTitle: "Madrid, Spain",
     postTime: "December 18 at 12:11 AM",
+    react: "1.8K",
+    comment: "720 Comments",
   },
   {
     id: 6,
@@ -57,6 +67,8 @@ export default [
     postUrl:
       "https://scontent.frjh1-1.fna.fbcdn.net/v/t1.6435-9/125982981_1332071593807385_8869308785745388164_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rYPAZLN7xqcAX8ncU38&_nc_ht=scontent.frjh1-1.fna&oh=00_AT_r0e6O_MiDMqIwoXI7jxbcTsUSWAitBsdISPxwPmEDGw&oe=634D3970",
     postTime: "September 17 at 2:24 PM",
+    react: "You, Md Juel and 49 others",
+    comment: "50 Comments",
   },
   {
     id: 7,
@@ -67,5 +79,7 @@ export default [
       "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-6/307642057_1204990270063724_1628153922150517064_n.jpg?stp=dst-jpg_p180x540&_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nje--q3irtoAX_vV1kN&_nc_ht=scontent.frjh1-1.fna&oh=00_AT9xIO5rpg4zVeirnUfycdYihBzWdg5Fq7X1DQVTxXDJVQ&oe=632DBE00",
     postTitle: "🇹🇭 𝐓𝐡𝐚𝐢𝐥𝐚𝐧𝐝 𝐕𝐢𝐬𝐚 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 🇹🇭",
     postTime: "December 18 at 12:11 AM",
+    react: "2.6K",
+    comment: "1K Comments",
   },
 ];

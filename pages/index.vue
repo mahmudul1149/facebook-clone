@@ -44,14 +44,18 @@
         </div>
       </div>
       <div class="signin-group">
-        <form action="">
+        <form action="" @submit.prevent="loginUser">
           <input
-            type="text"
-            name=""
+            type="email"
             placeholder="Email address or phone number"
-            id=""
+            v-model="user.email"
           />
-          <input type="password" name="" placeholder="Password" id="" />
+          <input
+            type="password"
+            name=""
+            placeholder="Password"
+            v-model="user.password"
+          />
           <div class="text-center">
             <button type="submit" class="btn btn-secondery">Log in</button>
           </div>
@@ -78,6 +82,7 @@
 <script>
 import signinVue from "~/components/signin.vue";
 import signupVue from "~/components/signup.vue";
+import { login } from "../service/firebaseService";
 export default {
   components: {
     signinVue,
@@ -87,6 +92,10 @@ export default {
     return {
       show: false,
       visible: false,
+      user: {
+        email: "",
+        password: "",
+      },
     };
   },
   methods: {
@@ -95,6 +104,23 @@ export default {
     },
     showSignup() {
       this.visible = !this.visible;
+    },
+    loginUser() {
+      this.isLoading = true;
+      login(this.user.email, this.user.password)
+        .then((user) => {
+          // commit the mutation
+          this.$store.commit("setUser", user);
+        })
+        .then(() => {
+          // Go to the home page after loggin in.
+          this.$router.push("/post");
+        })
+        .catch((err) => {
+          this.$router.push("/");
+          this.isLoading = false;
+        });
+      console.log("hello");
     },
   },
 };

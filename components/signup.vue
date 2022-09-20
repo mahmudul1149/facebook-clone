@@ -7,13 +7,31 @@
         <span>It's quick and easy.</span>
       </div>
       <div class="signup-group">
-        <form action="#">
+        <form action="#" @submit.prevent="registerUser">
           <div class="flex">
-            <input class="input" type="text" placeholder="FirstName" />
+            <input
+              class="input"
+              type="text"
+              placeholder="FirstName"
+              required
+              v-model="user.username"
+            />
             <input class="input" type="text" placeholder="Surname" />
           </div>
-          <input class="input" type="email" placeholder="Email address" />
-          <input class="input" type="password" placeholder="New password" />
+          <input
+            class="input"
+            type="email"
+            required
+            placeholder="Email address"
+            v-model="user.email"
+          />
+          <input
+            class="input"
+            type="password"
+            required
+            placeholder="New password"
+            v-model="user.password"
+          />
           <div class="birth">
             <a href="#"
               >Date of birth
@@ -95,9 +113,15 @@
 </template>
 
 <script>
+import { register } from "../service/firebaseService";
 export default {
   data() {
     return {
+      user: {
+        username: "",
+        email: "",
+        password: "",
+      },
       selectedays: 18,
       selectedmonths: "Nov",
       selectedYear: 2022,
@@ -135,6 +159,23 @@ export default {
   methods: {
     hideOrderForm() {
       this.$emit("toggle-order-form");
+    },
+    registerUser() {
+      this.isLoading = true;
+      register(this.user.username, this.user.email, this.user.password)
+        .then((user) => {
+          // commit the mutation
+          this.$store.commit("setUser", user);
+        })
+        .then(() => {
+          // Go to the home page after loggin in.
+          this.$router.push("/post");
+        })
+        .catch((err) => {
+          alert("error");
+          this.$router.push("/");
+          this.isLoading = false;
+        });
     },
   },
 };

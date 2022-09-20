@@ -13,14 +13,17 @@
             class="cross-icon"
           />
           <div class="signinwrap">
-            <form action="">
+            <form @submit.prevent="loginUser">
               <input
-                type="text"
-                name=""
+                type="email"
                 placeholder="Email address or phone number"
-                id=""
+                v-model="user.email"
               />
-              <input type="password" name="" placeholder="Password" id="" />
+              <input
+                type="password"
+                placeholder="Password"
+                v-model="user.password"
+              />
               <div class="flex-check">
                 <div class="check">
                   <input type="checkbox" name="" id="" />
@@ -45,10 +48,35 @@
 </template>
 
 <script>
+import { login } from "../service/firebaseService";
 export default {
+  data() {
+    return {
+      user: {
+        username: "",
+        email: "",
+        password: "",
+      },
+    };
+  },
   methods: {
     hideorderform() {
       this.$emit("toggole-order-form");
+    },
+    loginUser() {
+      this.isLoading = true;
+      login(this.user.email, this.user.password, this.user.username)
+        .then((user) => {
+          this.$store.commit("setUser", user);
+        })
+        .then(() => {
+          this.$router.push("/post");
+        })
+        .catch((err) => {
+          this.$router.push("/");
+          this.isLoading = false;
+        });
+      console.log("hello");
     },
   },
 };
