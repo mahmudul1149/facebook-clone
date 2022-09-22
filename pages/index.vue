@@ -49,12 +49,14 @@
             type="email"
             placeholder="Email address or phone number"
             v-model="user.email"
+            required
           />
           <input
             type="password"
             name=""
             placeholder="Password"
             v-model="user.password"
+            required
           />
           <div class="text-center">
             <button type="submit" class="btn btn-secondery">Log in</button>

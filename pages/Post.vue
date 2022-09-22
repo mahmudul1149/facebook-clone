@@ -78,7 +78,7 @@ export default {
     display: none;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .right-sidebar {
     display: none;
   }
