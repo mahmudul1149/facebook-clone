@@ -196,7 +196,7 @@ export default {};
         border-radius: 50%;
         background-position: center;
         background-size: cover;
-        background-repeat: no-repeat;
+        background-position: no-repeat;
         object-fit: cover;
         background: #166ada;
         position: absolute;

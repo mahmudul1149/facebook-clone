@@ -212,6 +212,7 @@ export default {
       background-size: cover;
       background-repeat: no-repeat;
       object-fit: cover;
+      cursor: pointer;
     }
     .content {
       margin-top: 3px;
@@ -230,6 +231,7 @@ export default {
     }
   }
   .post-image {
+    cursor: pointer;
     width: 100%;
     height: 100%;
     background-position: center;

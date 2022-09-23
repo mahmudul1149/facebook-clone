@@ -226,6 +226,7 @@ export default {
       gap: 0.5rem;
       position: relative;
       box-sizing: border-box;
+      cursor: pointer;
       &:hover {
         background: #e4e6e9;
         .dots-icon {
@@ -305,6 +306,9 @@ export default {
         img {
           width: 35px;
           height: 35px;
+          background-size: cover;
+          object-fit: cover;
+          background-position: no-repeat;
           border-radius: 50%;
         }
 
