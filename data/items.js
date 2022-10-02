@@ -4,6 +4,8 @@ import jukerbag01 from "~/assets/image/jukervag.jpg";
 import jukerbagpost from "~/assets/image/jukerbagpost.jpg";
 import oxford from "~/assets/image/oxford01.jpg";
 import oxford01 from "~/assets/image/oxford.jpg";
+import travel from "../assets/image/travel.jpg";
+import thiland from "../assets/image/thiland.jpg";
 export default [
   {
     id: 1,
@@ -50,10 +52,8 @@ export default [
   {
     id: 5,
     title: "Beautiful Places I𝐄𝐬𝐩𝐲 𝐓𝐫𝐚𝐯𝐞𝐥 & 𝐓𝐨𝐮𝐫𝐢𝐬𝐦n The World",
-    profileUrl:
-      "https://scontent.frjh1-1.fna.fbcdn.net/v/t1.6435-9/141946951_842994896263265_3160198717942208948_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=lYn1witDWO4AX8Jac6y&_nc_ht=scontent.frjh1-1.fna&oh=00_AT8PFCbI5lqVW6Zve96uq26iSZJZ0FjGGJ9H6VtHepSdiw&oe=634D8D07",
-    postUrl:
-      "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-6/307642057_1204990270063724_1628153922150517064_n.jpg?stp=dst-jpg_p180x540&_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nje--q3irtoAX_vV1kN&_nc_ht=scontent.frjh1-1.fna&oh=00_AT9xIO5rpg4zVeirnUfycdYihBzWdg5Fq7X1DQVTxXDJVQ&oe=632DBE00",
+    profileUrl: travel,
+    postUrl: thiland,
     postTitle: "🇹🇭 𝐓𝐡𝐚𝐢𝐥𝐚𝐧𝐝 𝐕𝐢𝐬𝐚 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 🇹🇭",
     postTime: "December 18 at 12:11 AM",
     react: "2.6K",

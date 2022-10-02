@@ -3,12 +3,9 @@
     <div class="sponsored">
       <span class="title">Sponsored</span>
       <div class="items">
-        <img
-          src="https://scontent.frjh1-1.fna.fbcdn.net/v/t45.1600-4/294260902_23850904529140682_3813134265373950880_n.jpg?stp=dst-jpg_p285x285&_nc_cat=1&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=g5nEtsC85EgAX_hVJIc&_nc_ht=scontent.frjh1-1.fna&oh=00_AT_TrEoG24x_Pc8i5URBfyPxnSoy_9K7lO3o-diwpchnLA&oe=632FAAD4"
-          alt=""
-        />
+        <img src="~/assets/image/architecture.jpg" alt="" />
         <div class="content">
-          <span>ARCHITECTURAL VISUALIZATION</span>
+          <span>twelve open architecture competition</span>
           <a href="#">architecturecompetitions.com</a>
         </div>
         <button class="dots-icon btn">
@@ -28,13 +25,10 @@
         </button>
       </div>
       <div class="items">
-        <img
-          src="https://scontent.frjh1-1.fna.fbcdn.net/v/t45.1600-4/280866537_23850459120660402_4520013502685525876_n.jpg?stp=cp0_dst-jpg_p296x100_q75_spS444&_nc_cat=1&ccb=1-7&_nc_sid=67cdda&_nc_ohc=5ehYaXwp9U4AX8OSvep&_nc_ht=scontent.frjh1-1.fna&oh=00_AT-kx5c_5W4oQAS7EoRoYSXkLK7aOvNrp4IIvyvuQShbDQ&oe=632E60D0"
-          alt=""
-        />
+        <img src="~/assets/image/participate.jpg" alt="" />
         <div class="content">
-          <span>kfcbd.com</span>
-          <a href="#">kfcbd.com</a>
+          <span>Participate!</span>
+          <a href="#">naturajazz.org</a>
         </div>
         <button class="dots-icon btn">
           <svg
@@ -154,6 +148,15 @@
 </template>
 
 <script>
+import mahmud from "../assets/active/mahmud.jpg";
+import nasim from "../assets/active/nasim1.jpg";
+import almahmud from "../assets/active/almahmud.jpg";
+import juel from "../assets/active/juel.jpg";
+import akram from "../assets/active/akram.jpg";
+import rabbi from "../assets/active/rabbi.jpg";
+import manik from "../assets/active/manik.jpg";
+import siam from "../assets/active/siam.jpg";
+import siblue from "../assets/active/siblue.jpg";
 export default {
   data() {
     return {
@@ -161,47 +164,47 @@ export default {
         {
           id: 1,
           name: "Md Mahmudul islam",
-          url: "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-6/276280550_1702618383419369_4455634079149006924_n.jpg?stp=dst-jpg_s526x395&_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=j90iikHELH8AX-dfaf-&_nc_ht=scontent.frjh1-1.fna&oh=00_AT8wvjqKSV19R76Xv5bwM40L7Bsw4vIDafARhEZvrC3Nqw&oe=632E5EF2",
+          url: mahmud,
         },
         {
-          id: 1,
+          id: 2,
           name: "Md Nasim Uddin",
-          url: "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-6/281260717_172257738537430_4748748496322348048_n.jpg?stp=dst-jpg_p180x540&_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=ix0XvJ608bEAX9ry_ms&_nc_ht=scontent.frjh1-1.fna&oh=00_AT9uMU8lrB10ARGfWfeiLere93EaIiEkjmw90n6Dg-yA8w&oe=632E51BD",
-        },
-        {
-          id: 1,
-          name: "Md Al Mamun Shekh",
-          url: "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-6/280589657_1691573441188861_2970455275943418981_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=OsUgr-tjFg0AX-cWkPU&_nc_ht=scontent.frjh1-1.fna&oh=00_AT-VqVGOd1zBFBMSf708I1ebnVYilhh_Zq44m2AYR2Uqdg&oe=632F721A",
+          url: nasim,
         },
         {
           id: 3,
+          name: "Md Al Mamun Shekh",
+          url: almahmud,
+        },
+        {
+          id: 4,
           name: "Md Jewel",
-          url: "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-6/217910192_995388501271238_4947997805894755627_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=PdCcpTb4QcsAX-9BLyq&_nc_ht=scontent.frjh1-1.fna&oh=00_AT9FoY7u5miL424IE7emQzeom5_SYxRwDF-cdgHbAeKrkA&oe=632E8D92",
-        },
-        {
-          id: 4,
-          name: "Md Akram Sheikh",
-          url: "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-1/279316467_1114604346051332_8794568449286206057_n.jpg?stp=c52.0.200.200a_dst-jpg_p200x200&_nc_cat=104&ccb=1-7&_nc_sid=7206a8&_nc_ohc=H4FQy6t6IbIAX-pkCbl&_nc_ht=scontent.frjh1-1.fna&oh=00_AT_ttwNEq25BJccMj-AvimdAr2QW4UQY3Vyg0dbqfGDfDw&oe=632E2E53",
-        },
-        {
-          id: 4,
-          name: "Rabbi Hossain",
-          url: "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-6/271767253_1311471179366330_7360195406424222870_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=geWcENhwipgAX9wYCeP&_nc_ht=scontent.frjh1-1.fna&oh=00_AT87ygmn5thFYHnbisijfpK400D8wcyAUP0bWeeuyJ8eKA&oe=632F79D7",
+          url: juel,
         },
         {
           id: 5,
+          name: "Md Akram Sheikh",
+          url: akram,
+        },
+        {
+          id: 6,
+          name: "Rabbi Hossain",
+          url: rabbi,
+        },
+        {
+          id: 7,
           name: "Md. Manik Sheak",
-          url: "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-1/300232908_774998306976034_4819920451921926502_n.jpg?stp=c0.0.200.200a_dst-jpg_p200x200&_nc_cat=102&ccb=1-7&_nc_sid=7206a8&_nc_ohc=iHzRrnfHdwIAX-iFzje&_nc_ht=scontent.frjh1-1.fna&oh=00_AT8MzoGidZQXbFxARWPumtasP0v8A_O6AenNM74yeEDuGg&oe=632EA667",
+          url: manik,
         },
         {
-          id: 6,
+          id: 8,
           name: "Md Siam Sheikh",
-          url: "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-1/296213247_606648367769609_1793369578773891369_n.jpg?stp=c0.37.200.200a_dst-jpg_p200x200&_nc_cat=100&ccb=1-7&_nc_sid=7206a8&_nc_ohc=4pawAZgELSEAX9Lckuj&_nc_ht=scontent.frjh1-1.fna&oh=00_AT_mgcW4JG-QVFson1TNPYw4IEx6E5IH80hbYjUvAUwd2Q&oe=632FCF56",
+          url: siam,
         },
         {
-          id: 6,
+          id: 9,
           name: "Md Jibon Ahmed Shiblu",
-          url: "https://scontent.frjh1-1.fna.fbcdn.net/v/t39.30808-6/307643224_159211846759404_8667260203908064014_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=BN9HDoIrLiwAX85DI6x&tn=usaNiXqT_mjS_xPT&_nc_ht=scontent.frjh1-1.fna&oh=00_AT_FGeBa1i7WygTNGRbf1M1VuPmfXoNrTmi6eVcRMsxCAA&oe=632F2B14",
+          url: siblue,
         },
       ],
     };
