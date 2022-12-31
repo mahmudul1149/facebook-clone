@@ -378,7 +378,7 @@ export default {
   .flex {
     @include flex;
     gap: 0.5rem;
-    padding: 0.6rem;
+    padding: 0.4rem;
     border-bottom: 1px solid rgba(81, 78, 78, 0.1);
 
     .profile {

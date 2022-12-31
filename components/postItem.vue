@@ -172,7 +172,8 @@ export default {
     position: relative;
     p {
       margin: 0.5rem;
-      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      font-family: "Roboto", sans-serif;
     }
     .dots-icon {
       position: absolute;
@@ -195,7 +196,8 @@ export default {
       }
       .comments {
         margin-left: auto;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
       }
     }
   }
@@ -218,8 +220,12 @@ export default {
       margin-top: 3px;
       .title {
         font-size: 1rem;
-        font-weight: 500;
-        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #333333;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
       }
       .date {
         font-size: 0.7rem;
@@ -252,9 +258,8 @@ export default {
       align-items: center;
       gap: 0.5rem;
       span {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
       }
     }
     .btn-react,
@@ -262,7 +267,7 @@ export default {
     .btn-share {
       padding: 0.4rem 3.5rem;
       &:hover {
-        background: #e7e3e1;
+        background: #f2f2f2;
       }
     }
   }
