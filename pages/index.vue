@@ -11,7 +11,7 @@
           <div class="item">
             <img src="~/assets/image/profile01.jpg" alt="" />
             <div class="content-box">
-              <span>Md Mahmudul </span>
+              <p>Md Mahmudul</p>
             </div>
           </div>
           <button @click="showModal" class="item">
@@ -38,7 +38,7 @@
               </svg>
             </div>
             <div class="content-box">
-              <span class="add-account">Add Account</span>
+              <p class="add-account">Add Account</p>
             </div>
           </button>
         </div>
@@ -169,7 +169,15 @@ export default {
       display: flex;
       align-items: center;
       gap: 0.8rem;
-
+      .content-box {
+        p {
+          padding-top: 1rem;
+          font-size: 1.1rem;
+          font-weight: 400;
+          padding: 1rem !important;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
       .item {
         width: 150px;
         height: 200px;
@@ -187,7 +195,7 @@ export default {
           border-top-right-radius: 5px;
           border-top-left-radius: 5px;
           width: 100%;
-          height: 100%;
+          height: 74%;
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -195,20 +203,15 @@ export default {
         }
         .content-box {
           background: white;
-          padding: 0.7rem;
+
           text-align: center;
           width: 100%;
           box-sizing: border-box;
           border-bottom-right-radius: 5px;
           border-bottom-left-radius: 5px;
+
           .add-account {
             color: #0268ee;
-          }
-          span {
-            font-size: 1.1rem;
-            font-weight: 400;
-
-            font-family: Arial, Helvetica, sans-serif;
           }
         }
         .bg-account {
