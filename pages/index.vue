@@ -9,7 +9,7 @@
         </div>
         <div class="items">
           <div class="item">
-            <img src="~/assets/image/profile.png" alt="" />
+            <img src="~/assets/image/profile01.jpg" alt="" />
             <div class="content-box">
               <span>Md Mahmudul </span>
             </div>

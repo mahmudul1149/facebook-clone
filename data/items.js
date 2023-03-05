@@ -1,11 +1,11 @@
-import profile01 from "~/assets/image/profile.png";
 import profile06 from "~/assets/image/image06.jpg";
-import jukerbag01 from "~/assets/image/jukervag.jpg";
 import jukerbagpost from "~/assets/image/jukerbagpost.jpg";
-import oxford from "~/assets/image/oxford01.jpg";
+import jukerbag01 from "~/assets/image/jukervag.jpg";
 import oxford01 from "~/assets/image/oxford.jpg";
-import travel from "../assets/image/travel.jpg";
+import oxford from "~/assets/image/oxford01.jpg";
+import profile01 from "~/assets/image/profile01.jpg";
 import thiland from "../assets/image/thiland.jpg";
+import travel from "../assets/image/travel.jpg";
 export default [
   {
     id: 1,

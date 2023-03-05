@@ -2,7 +2,7 @@
   <div>
     <div class="crete-post">
       <div class="flex">
-        <svg
+        <!-- <svg
           class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-13y7ul3 profile"
           focusable="false"
           aria-hidden="true"
@@ -16,7 +16,8 @@
           <path
             d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
           ></path>
-        </svg>
+        </svg> -->
+        <img class="profile" src="../assets/image/avatar.png" alt="" />
 
         <input
           type="text"
@@ -110,21 +111,7 @@
       <div class="items" v-if="userItems">
         <div class="item" v-for="item in userItems" :key="item.id">
           <div class="bio">
-            <svg
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-13y7ul3 profile-img"
-              focusable="false"
-              aria-hidden="true"
-              width="35"
-              height="35"
-              fill="white"
-              viewBox="0 0 24 24"
-              data-testid="PersonIcon"
-              cursor="pointer"
-            >
-              <path
-                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
-              ></path>
-            </svg>
+            <img src="~/assets/image/avatar.png" class="prprofile-img" alt="" />
 
             <div class="content">
               <span class="title">{{ user.displayName }}</span>
@@ -221,27 +208,13 @@
         </div>
         <div class="item">
           <div class="bio">
-            <svg
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-13y7ul3 profile-img"
-              focusable="false"
-              aria-hidden="true"
-              width="35"
-              height="35"
-              fill="white"
-              viewBox="0 0 24 24"
-              data-testid="PersonIcon"
-              cursor="pointer"
-            >
-              <path
-                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
-              ></path>
-            </svg>
+            <img src="../assets/image/avatar.png" alt="" />
 
             <div class="content">
               <span class="title">Md Mahmudul islam</span>
             </div>
           </div>
-          <p>I am a web developer</p>
+          <p>I am a frontend developer</p>
 
           <div class="react-btn">
             <button class="btn btn-react">
@@ -383,7 +356,8 @@ export default {
 
     .profile {
       background: #c9ccd1;
-      padding: 5px;
+      width: 55px;
+      height: 55px;
       border-radius: 50%;
     }
     input {
@@ -426,11 +400,15 @@ export default {
   .items {
     .bio {
       .profile-img {
-        background: #c9ccd1;
-        padding: 5px;
+        border: 1px solid #ccc;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
       }
     }
+  }
+  p {
+    padding-left: 0.8rem;
   }
 }
 @media screen and (max-width: 800px) {
