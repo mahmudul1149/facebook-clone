@@ -191,6 +191,8 @@ export default {
   z-index: 99999;
   background: white;
   box-shadow: 0 0 5px #ccc;
+
+  border-radius: 10px;
   .delete-img {
     position: absolute;
     top: 0.5rem;
@@ -198,28 +200,32 @@ export default {
     cursor: pointer;
   }
   .content {
-    padding: 0.7rem;
+    padding: 1rem;
     border: 1px solid rgba(99, 96, 96, 0.3);
     h1 {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
     }
     span {
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 3000;
+      font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+      color: SFProText-Regular, Helvetica, Arial, sans-serif;
+      color: #606770;
+      font-weight: 400;
+      font-size: 14px;
     }
   }
 
   .signup-group {
-    padding: 0.7rem;
+    padding: 1rem;
 
     .input {
       width: 100%;
       display: block;
       padding: 0.6rem;
-      font-size: 0.9rem;
+      font-size: 15px;
       border: none;
       outline: none;
       border: 1px solid #ccc;
+      font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
       box-sizing: border-box;
       border-radius: 5px;
       background: #f5f6f7;
@@ -238,9 +244,12 @@ export default {
         select {
           width: 200px;
           padding: 0.6rem;
+          font-weight: 400;
+          font-size: 15px;
           outline: none;
           border: 1px solid rgba(0, 0, 0, 0.3);
           border-radius: 5px;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
           option {
             padding: 10px;
           }
@@ -249,13 +258,12 @@ export default {
       a {
         display: flex;
         align-items: center;
-        font-size: 0.8rem;
-        padding: 0.3rem 0;
-        color: #333;
+        font-size: 12px;
+        padding: 0.4rem 0;
+        color: #606770;
+        font-weight: 400;
         text-decoration: none;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
+        font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
         .question-png {
           width: 10px;
           height: 10px;
@@ -267,13 +275,12 @@ export default {
       a {
         display: flex;
         align-items: center;
-        font-size: 0.8rem;
-        padding: 0.3rem 0;
-        color: #333;
+        font-size: 12px;
+        padding: 0.4rem 0;
+        color: #606770;
+        font-weight: 400;
         text-decoration: none;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
+        font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
         .question-png {
           width: 10px;
           height: 10px;
@@ -290,6 +297,9 @@ export default {
           display: flex;
           align-items: center;
           border-radius: 5px;
+          font-weight: 400;
+          font-size: 15px;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
           gap: 1.9rem;
           label {
             font-size: 1rem;
@@ -302,9 +312,10 @@ export default {
       a {
         text-decoration: none;
         margin-top: 3rem;
-        color: #333;
-        font-size: 12px;
-        font-family: Arial, Helvetica, sans-serif;
+        color: #777777;
+        font-size: 11px;
+        font-weight: 400;
+        font-family: Helvetica, Arial, sans-serif;
         span {
           color: #92d2ff;
           &:hover {

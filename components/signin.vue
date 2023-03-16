@@ -39,7 +39,7 @@
               </div>
             </form>
             <div class="text-center">
-              <p>Forgotten password?</p>
+              <p class="forgot-pass">Forgotten password?</p>
             </div>
           </div>
         </div>
@@ -163,6 +163,12 @@ export default {
     &:hover {
       text-decoration: underline;
     }
+  }
+  .forgot-pass {
+    color: #1877f2;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: Helvetica, Arial, sans-serif;
   }
   input {
     display: block;

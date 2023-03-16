@@ -8,12 +8,6 @@
           <p>Click your picture or add an account.</p>
         </div>
         <div class="items">
-          <div class="item">
-            <img src="~/assets/image/profile01.jpg" alt="" />
-            <div class="content-box">
-              <p>Md Mahmudul</p>
-            </div>
-          </div>
           <button @click="showModal" class="item">
             <div class="bg-account">
               <svg
@@ -149,21 +143,22 @@ export default {
     }
     .title {
       color: #1877f2;
-      font-size: 2.5rem;
-      font-weight: 800;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        sans-serif;
+      font-size: 3rem;
+      font-weight: 600;
+      font-family: Helvetica, Arial, sans-serif;
     }
     span {
-      font-size: 1rem;
-      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: #1c1e21;
+      font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
     }
     p {
       font-size: 1rem;
+      font-weight: 600;
+      font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
       padding: 0.7rem 0;
-      color: #606770;
+      color: rgba(0, 0, 0, 0.6);
     }
     .items {
       display: flex;
@@ -211,7 +206,9 @@ export default {
           border-bottom-left-radius: 5px;
 
           .add-account {
-            color: #0268ee;
+            font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+            color: #1877f2;
+            font-size: 18px;
           }
         }
         .bg-account {
@@ -256,7 +253,9 @@ export default {
     p {
       color: #1877f2;
       padding: 0.8rem 0;
-      font-size: 1.1rem;
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-family: Helvetica, Arial, sans-serif;
       border-bottom: 1px solid rgba(130, 117, 117, 0.3);
       &:hover {
         text-decoration: underline;
@@ -283,10 +282,11 @@ export default {
       padding: 0.9rem;
       background: #0268ee;
       color: white;
-      font-size: 1.2rem;
+      font-size: 20px;
       font-weight: 700;
       border-radius: 5px;
       transition: 0.3s ease-in;
+      font-family: Helvetica, Arial, sans-serif;
       &:hover {
         background: #005fdb;
       }
@@ -294,10 +294,9 @@ export default {
     .btn-primary {
       padding: 0.9rem;
       background: #42b72a;
-      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
-      color: white;
-      font-size: 1.2rem;
+      font-family: Helvetica, Arial, sans-serif;
+      color: #ffffff;
+      font-size: 17px;
       font-weight: 700;
       border-radius: 5px;
       transition: 0.3s ease-in-out;
