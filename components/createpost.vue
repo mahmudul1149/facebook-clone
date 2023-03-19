@@ -358,6 +358,7 @@ export default {
       background: #c9ccd1;
       width: 55px;
       height: 55px;
+      cursor: pointer;
       border-radius: 50%;
     }
     input {

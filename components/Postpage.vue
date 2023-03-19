@@ -150,6 +150,8 @@ export default {};
 
         span {
           font-size: 0.9rem;
+          font-weight: 600;
+          font-family: Arial, Helvetica, sans-serif;
         }
       }
 
