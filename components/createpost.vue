@@ -23,7 +23,7 @@
           type="text"
           name=""
           id=""
-          placeholder="whats's on your mind,"
+          placeholder="what's on your mind,"
           v-model="text"
           @change="addItem"
         />
