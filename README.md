@@ -3,9 +3,10 @@ This project is a Facebook clone built using HTML, CSS, SASS, Vue.js, and Nuxt.j
 ## Demo
 Live version of this site: https://facebook-clone001.netlify.app/
 
-Here's working demo  [facebook-clone video.webm](https://user-images.githubusercontent.com/97284604/229862398-5c9bb2ef-1afa-464d-a21a-994c244f1e40.webm)
+Here's working demo: 
 
 
+[facebook-clone video.webm](https://user-images.githubusercontent.com/97284604/229994090-de3916fc-d7ac-438a-a8d6-aafc2af3f11a.webm)
 ## Tech Stack
 HTML, CSS, Sass, JavaScript, Vue.js & Nuxt.js
 
