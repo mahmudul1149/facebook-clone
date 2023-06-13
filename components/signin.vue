@@ -50,7 +50,6 @@
 </template>
 
 <script>
-import { login } from "../service/firebaseService";
 export default {
   data() {
     return {
@@ -65,20 +64,17 @@ export default {
     hideorderform() {
       this.$emit("toggole-order-form");
     },
-    loginUser() {
-      this.isLoading = true;
-      login(this.user.email, this.user.password, this.user.username)
-        .then((user) => {
-          this.$store.commit("setUser", user);
-        })
-        .then(() => {
-          this.$router.push("/post");
-        })
-        .catch((err) => {
-          this.$router.push("/");
-          this.isLoading = false;
+    async loginUser() {
+      try {
+        this.isLoading = true;
+        await this.$store.dispatch("login", {
+          email: this.user.email,
+          password: this.user.password,
         });
-      console.log("hello");
+        this.$router.push("/post");
+      } catch (error) {
+        this.isLoading = false;
+      }
     },
   },
 };

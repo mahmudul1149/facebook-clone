@@ -327,9 +327,9 @@ export default {
       return this.$store.state.user;
     },
   },
-  mounted() {
-    this.$store.commit("initializeStore");
-  },
+  // mounted() {
+  //   this.$store.commit("initializeStore");
+  // },
   methods: {
     addItem() {
       this.userItems.unshift({ post: this.text });

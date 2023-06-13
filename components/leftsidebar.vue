@@ -89,9 +89,6 @@ export default {
       return string.substring(0, 1);
     },
   },
-  mounted() {
-    this.$store.commit("initializeStore");
-  },
 };
 </script>
 

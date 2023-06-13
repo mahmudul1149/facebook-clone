@@ -38,6 +38,7 @@
         </div>
       </div>
       <div class="signin-group">
+        {{ error }}
         <form action="" @submit.prevent="loginUser">
           <input
             type="email"
@@ -78,7 +79,7 @@
 <script>
 import signinVue from "~/components/signin.vue";
 import signupVue from "~/components/signup.vue";
-import { login } from "../service/firebaseService";
+
 export default {
   components: {
     signinVue,
@@ -88,6 +89,7 @@ export default {
     return {
       show: false,
       visible: false,
+      error: "",
       user: {
         email: "",
         password: "",
@@ -101,22 +103,16 @@ export default {
     showSignup() {
       this.visible = !this.visible;
     },
-    loginUser() {
-      this.isLoading = true;
-      login(this.user.email, this.user.password)
-        .then((user) => {
-          // commit the mutation
-          this.$store.commit("setUser", user);
-        })
-        .then(() => {
-          // Go to the home page after loggin in.
-          this.$router.push("/post");
-        })
-        .catch((err) => {
-          this.$router.push("/");
-          this.isLoading = false;
+    async loginUser() {
+      try {
+        await this.$store.dispatch("login", {
+          email: this.user.email,
+          password: this.user.password,
         });
-      console.log("hello");
+        this.$router.push("/post");
+      } catch (error) {
+        this.$router.push("/");
+      }
     },
   },
 };

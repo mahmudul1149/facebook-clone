@@ -355,7 +355,6 @@
 </template>
 
 <script>
-import { logout } from "../service/firebaseService";
 export default {
   data() {
     return {
@@ -384,9 +383,6 @@ export default {
     toggle() {
       this.visible = !this.visible;
     },
-  },
-  mounted() {
-    this.$store.dispatch("authAction");
   },
 };
 </script>

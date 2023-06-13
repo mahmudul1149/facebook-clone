@@ -3,6 +3,7 @@
     <div class="backdrop"></div>
     <div class="signup">
       <div class="content">
+        {{ error }}
         <h1>Sign Up</h1>
         <span>It's quick and easy.</span>
       </div>
@@ -113,10 +114,10 @@
 </template>
 
 <script>
-import { register } from "../service/firebaseService";
 export default {
   data() {
     return {
+      error: "",
       user: {
         username: "",
         email: "",
@@ -160,22 +161,18 @@ export default {
     hideOrderForm() {
       this.$emit("toggle-order-form");
     },
-    registerUser() {
-      this.isLoading = true;
-      register(this.user.username, this.user.email, this.user.password)
-        .then((user) => {
-          // commit the mutation
-          this.$store.commit("setUser", user);
-        })
-        .then(() => {
-          // Go to the home page after loggin in.
-          this.$router.push("/post");
-        })
-        .catch((err) => {
-          alert("error");
-          this.$router.push("/");
-          this.isLoading = false;
+    async registerUser() {
+      try {
+        await this.$store.dispatch("signup", {
+          email: this.user.email,
+          password: this.user.password,
+          userName: this.user.username,
         });
+        this.$router.push("/post");
+      } catch (error) {
+        alert("error");
+        this.$router.push("/");
+      }
     },
   },
 };
