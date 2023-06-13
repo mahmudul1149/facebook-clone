@@ -38,7 +38,10 @@
         </div>
       </div>
       <div class="signin-group">
-        {{ error }}
+        <div class="error" v-if="error">
+          {{ error }}
+        </div>
+
         <form action="" @submit.prevent="loginUser">
           <input
             type="email"
@@ -112,8 +115,7 @@ export default {
 
         await this.$router.push("/post");
       } catch (error) {
-        this.$router.push("/");
-      } finally {
+        this.error = "Failed login!";
       }
     },
   },

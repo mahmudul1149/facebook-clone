@@ -23,6 +23,10 @@ export const mutations = {
   setUser(state, user) {
     state.user = user;
   },
+  RESET_USER(state) {
+    state.user = null;
+    state.isLoggedIn = false;
+  },
 };
 
 export const actions = {
@@ -38,7 +42,9 @@ export const actions = {
 
       commit("setUser", user);
     } catch (error) {
-      alert(error);
+      commit("RESET_USER");
+      console.error(error);
+      throw error;
     }
   },
 
@@ -49,7 +55,9 @@ export const actions = {
         .signInWithEmailAndPassword(email, password);
       commit("setUser", user);
     } catch (error) {
-      this.$router.push("/");
+      commit("RESET_USER");
+      console.error(error);
+      throw error;
     }
   },
   async loggingOut({ commit }) {

@@ -3,6 +3,9 @@
     <div class="modalBody">
       <div class="signin">
         <div class="signin-group">
+          <div class="error mt-3" v-if="error">
+            {{ error }}
+          </div>
           <div class="text-center title">
             <span>Log in to Facebook</span>
           </div>
@@ -53,6 +56,7 @@
 export default {
   data() {
     return {
+      error: "",
       user: {
         username: "",
         email: "",
@@ -73,7 +77,7 @@ export default {
         });
         this.$router.push("/post");
       } catch (error) {
-        this.$router.push("/");
+        this.error = "Failed login!";
         this.isLoading = false;
       }
     },

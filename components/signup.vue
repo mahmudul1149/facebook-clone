@@ -3,7 +3,9 @@
     <div class="backdrop"></div>
     <div class="signup">
       <div class="content">
-        {{ error }}
+        <p class="error" v-if="error">
+          {{ error }}
+        </p>
         <h1>Sign Up</h1>
         <span>It's quick and easy.</span>
       </div>
@@ -170,7 +172,7 @@ export default {
         });
         this.$router.push("/post");
       } catch (error) {
-        this.$router.push("/test");
+        this.error = "Something went wrong to create account";
       }
     },
   },
@@ -332,6 +334,15 @@ export default {
       border-radius: 10px;
     }
   }
+}
+.error {
+  margin-top: 2rem;
+  color: white;
+  background: red;
+  padding: 0.8rem 0.6rem;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
 }
 .backdrop {
   position: fixed;
