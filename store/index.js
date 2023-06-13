@@ -3,7 +3,7 @@ import firebase from "firebase/compat/app";
 import items from "../data/items";
 export const state = () => ({
   items: null,
-  user: [],
+  user: null,
 });
 
 export const getters = {
@@ -34,7 +34,6 @@ export const actions = {
 
       await user.updateProfile({
         displayName: userName,
-        email: email,
       });
 
       commit("setUser", user);
@@ -52,6 +51,9 @@ export const actions = {
     } catch (error) {
       this.$router.push("/");
     }
+  },
+  async loggingOut() {
+    await firebase.auth().signOut();
   },
   initItems({ commit }) {
     commit("setItems", items);

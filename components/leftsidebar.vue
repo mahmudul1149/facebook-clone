@@ -5,7 +5,7 @@
         <li class="flex">
           <img src="../assets/image/avatar.png" class="avatar" alt="" />
 
-          <span>{{ user.displayName }}</span>
+          <span>{{ userName }}</span>
         </li>
       </ul>
       <ul>
@@ -78,10 +78,15 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   computed: {
-    user() {
-      return this.$store.state.user;
+    ...mapState(["user"]),
+    userName() {
+      return this.user ? this.user.displayName : "";
+    },
+    userEmail() {
+      return this.user ? this.user.email : "";
     },
   },
   filters: {

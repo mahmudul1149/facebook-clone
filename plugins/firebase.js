@@ -10,3 +10,13 @@ const firebaseConfig = {
   measurementId: "G-H06H4PHPZS",
 };
 firebase.initializeApp(firebaseConfig);
+
+export default function ({ store }) {
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      store.commit("setUser", user);
+    } else {
+      store.commit("setUser", null);
+    }
+  });
+}

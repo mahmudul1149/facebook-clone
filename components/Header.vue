@@ -205,7 +205,7 @@
                   <div class="items">
                     <div class="box">
                       <img src="../assets/image/Profile-pic.jpg" alt="" />
-                      <span class="title">{{ user.displayName }}</span>
+                      <span class="title">{{ userName }}</span>
                     </div>
                     <div class="pro-title">
                       <a href="#">See all profiles</a>
@@ -355,30 +355,34 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   data() {
     return {
       visible: false,
     };
   },
+
   computed: {
+    ...mapState(["user"]),
+    userName() {
+      return this.user ? this.user.displayName : "";
+    },
+
     items() {
       return this.$store.getters.items;
     },
-    user() {
-      return this.$store.state.user;
-    },
+
     isUserAuth() {
       return this.$store.getters.isUserAuth;
     },
   },
   methods: {
     logout() {
-      logout().then(() => {
-        this.$store.commit("setUser", null);
-
+      try {
+        this.$store.dispatch("loggingOut");
         this.$router.push("/");
-      });
+      } catch (error) {}
     },
     toggle() {
       this.visible = !this.visible;

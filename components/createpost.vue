@@ -114,7 +114,7 @@
             <img src="~/assets/image/avatar.png" class="prprofile-img" alt="" />
 
             <div class="content">
-              <span class="title">{{ user.displayName }}</span>
+              <span class="title">{{ userName }}</span>
             </div>
           </div>
           <p>{{ item.post }}</p>
@@ -309,6 +309,7 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   data() {
     return {
@@ -323,13 +324,15 @@ export default {
     };
   },
   computed: {
-    user() {
-      return this.$store.state.user;
+    ...mapState(["user"]),
+    userName() {
+      return this.user ? this.user.displayName : "";
+    },
+    userEmail() {
+      return this.user ? this.user.email : "";
     },
   },
-  // mounted() {
-  //   this.$store.commit("initializeStore");
-  // },
+
   methods: {
     addItem() {
       this.userItems.unshift({ post: this.text });
