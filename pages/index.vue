@@ -109,9 +109,11 @@ export default {
           email: this.user.email,
           password: this.user.password,
         });
-        this.$router.push("/post");
+
+        await this.$router.push("/post");
       } catch (error) {
         this.$router.push("/");
+      } finally {
       }
     },
   },

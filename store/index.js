@@ -38,7 +38,7 @@ export const actions = {
 
       commit("setUser", user);
     } catch (error) {
-      this.$router.push("/");
+      alert(error);
     }
   },
 
@@ -52,8 +52,9 @@ export const actions = {
       this.$router.push("/");
     }
   },
-  async loggingOut() {
+  async loggingOut({ commit }) {
     await firebase.auth().signOut();
+    commit("setUser", null);
   },
   initItems({ commit }) {
     commit("setItems", items);

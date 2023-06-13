@@ -170,8 +170,7 @@ export default {
         });
         this.$router.push("/post");
       } catch (error) {
-        alert("error");
-        this.$router.push("/");
+        this.$router.push("/test");
       }
     },
   },

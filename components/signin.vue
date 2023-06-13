@@ -73,6 +73,7 @@ export default {
         });
         this.$router.push("/post");
       } catch (error) {
+        this.$router.push("/");
         this.isLoading = false;
       }
     },

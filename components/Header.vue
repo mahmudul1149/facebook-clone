@@ -378,11 +378,13 @@ export default {
     },
   },
   methods: {
-    logout() {
+    async logout() {
       try {
-        this.$store.dispatch("loggingOut");
+        await this.$store.dispatch("loggingOut");
         this.$router.push("/");
-      } catch (error) {}
+      } catch (error) {
+        console.log(error);
+      }
     },
     toggle() {
       this.visible = !this.visible;
