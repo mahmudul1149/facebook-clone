@@ -23,7 +23,7 @@
           <button class="btn btn-search">
             <svg
               class="svg-icon"
-              style="width: 20; height: 20; vertical-align: middle; fill: #333"
+              style="width: 20; height: 15; vertical-align: middle; fill: #333"
               viewBox="0 0 1024 1024"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -192,8 +192,8 @@
             </nuxt-link>
             <span class="visible">Notifications</span>
           </li>
-          <li class="item">
-            <button class="btn dropdown" v-if="!isUserAuth">
+          <li class="item" v-if="!isUserAuth">
+            <button class="btn dropdown">
               <img
                 @click="toggle"
                 src="../assets/image/Profile-pic.jpg"
@@ -445,6 +445,7 @@ li {
   }
 
   .btn-search {
+    margin-top: 2px;
     position: absolute;
     background: #f0f2f5;
     padding: 0.7rem;
