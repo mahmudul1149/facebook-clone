@@ -109,12 +109,12 @@
 
     <div class="post">
       <div class="items" v-if="userItems">
-        <div class="item" v-for="item in userItems" :key="item.id">
+        <div class="item" v-for="item in posts" :key="item.id">
           <div class="bio">
             <img src="~/assets/image/avatar.png" class="prprofile-img" alt="" />
 
             <div class="content">
-              <span class="title">{{ userName }}</span>
+              <span class="title">{{ item.username }}</span>
             </div>
           </div>
           <p>{{ item.post }}</p>
@@ -309,34 +309,31 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import "firebase/compat/auth";
 export default {
   data() {
     return {
       text: "",
-      userItems: [
-        {
-          title: "",
-          post: " ",
-          completed: true,
-        },
-      ],
+      userItems: [],
     };
   },
   computed: {
-    ...mapState(["user"]),
-    userName() {
-      return this.user ? this.user.displayName : "";
+    username() {
+      return this.$store.state.user.displayName;
     },
-    userEmail() {
-      return this.user ? this.user.email : "";
+    posts() {
+      return this.$store.state.posts;
     },
   },
 
   methods: {
     addItem() {
-      this.userItems.unshift({ post: this.text });
+      const newPost = {
+        username: this.username,
+        post: this.text,
+      };
 
+      this.$store.commit("addPost", newPost);
       this.text = "";
     },
   },

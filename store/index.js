@@ -4,6 +4,7 @@ import items from "../data/items";
 export const state = () => ({
   items: null,
   user: null,
+  posts: [],
 });
 
 export const getters = {
@@ -26,6 +27,9 @@ export const mutations = {
   RESET_USER(state) {
     state.user = null;
     state.isLoggedIn = false;
+  },
+  addPost(state, post) {
+    state.posts.unshift(post);
   },
 };
 
