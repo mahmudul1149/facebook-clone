@@ -108,16 +108,16 @@
     </div>
 
     <div class="post">
-      <div class="items" v-if="userItems">
-        <div class="item" v-for="item in posts" :key="item.id">
+      <div class="items" v-if="posts">
+        <div class="item" v-for="post in posts" :key="post.id">
           <div class="bio">
             <img src="~/assets/image/avatar.png" class="prprofile-img" alt="" />
 
             <div class="content">
-              <span class="title">{{ item.username }}</span>
+              <span class="title">{{ post.username }}</span>
             </div>
           </div>
-          <p>{{ item.post }}</p>
+          <p>{{ post.post }}</p>
 
           <div class="react-btn">
             <button class="btn btn-react">
@@ -314,26 +314,35 @@ export default {
   data() {
     return {
       text: "",
-      userItems: [],
+      posts: [],
     };
   },
   computed: {
     username() {
       return this.$store.state.user.displayName;
     },
-    posts() {
-      return this.$store.state.posts;
-    },
   },
-
+  mounted() {
+    const storedPosts = localStorage.getItem("fbposts");
+    if (storedPosts) {
+      this.posts = JSON.parse(storedPosts);
+    }
+  },
   methods: {
     addItem() {
       const newPost = {
         username: this.username,
         post: this.text,
       };
+      let existingPosts = localStorage.getItem("fbposts");
 
-      this.$store.commit("addPost", newPost);
+      if (existingPosts) {
+        this.posts = JSON.parse(existingPosts);
+      } else {
+        this.posts = [];
+      }
+      this.posts.unshift(newPost);
+      localStorage.setItem("fbposts", JSON.stringify(this.posts));
       this.text = "";
     },
   },
