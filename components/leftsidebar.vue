@@ -12,7 +12,7 @@
         <li>
           <img
             class="gneimcpu p9wrh9lq"
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/S0U5ECzYUSu.png?_nc_eui2=AeEuJBYO2bw14eRYSUcKvn5rqfpKmA4GtxSp-kqYDga3FDBizg_WKQ8xmulQhtzd8Voch9te1uw4njJItUNBTQsr"
+            src="../assets/image/friends.png"
             style="height: 36px; width: 36px"
             alt=""
           />
@@ -21,7 +21,7 @@
         <li>
           <img
             class="gneimcpu p9wrh9lq"
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/duk32h44Y31.png?_nc_eui2=AeHUOGb_spanPBiZPEWzDDf6x42NRDTXGHJ53Y1ENNcYcnnQX9RTyhhq4Mm2owEhGBuB6fdcCeR8bkGGDHiP1AQ_v6"
+            src="../assets/image/watch.png"
             style="height: 36px; width: 36px"
             alt=""
           />
@@ -30,7 +30,7 @@
         <li>
           <img
             class="gneimcpu p9wrh9lq"
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/CwKNCefmHON.png?_nc_eui2=AeG5sROZJ8FIdqRET8URJpQvdJ1I9kdbuqh0nUj2R1u6qMXeAoIqw_tSGUXaoD91C8GwN1Qrs0-pqmyb_1sB02YQ"
+            src="../assets/image/add-center.png"
             style="height: 36px; width: 36px"
             alt=""
           />
@@ -39,7 +39,7 @@
         <li>
           <img
             class="gneimcpu p9wrh9lq"
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/PrjLkDYpYbH.png?_nc_eui2=AeGFnFzh6YdCwRDrJWq6ERNpZ3xAUM5_bWpnfEBQzn9tapgIZ-HLDedXPbXRassPzZ74cuNwhxcxohpUcwR-NXPo"
+            src="../assets/image/groups.png"
             style="height: 36px; width: 36px"
             alt=""
           />
@@ -48,7 +48,7 @@
         <li>
           <img
             class="gneimcpu p9wrh9lq"
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/D2y-jJ2C_hO.png?_nc_eui2=AeEefNHeGZ5FTZnw3hiDPhP3-vsl1K9A-9v6-yXUr0D7246S0FNRLeyaGbvGSVxNbQgBzimbeSJvYBx8AZogT7IM"
+            src="../assets/image/marketplace.png"
             style="height: 36px; width: 36px"
             alt=""
           />
@@ -57,19 +57,34 @@
         <li>
           <img
             class="gneimcpu p9wrh9lq"
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/he-BkogidIc.png?_nc_eui2=AeGCLrxbQzJKaSvVHoqUjOT-a4YXxTz5jX9rhhfFPPmNf8Oq5JATRk1OPCqn-mgviry-K1tAuEBFhuakDsnVoZgN"
+            src="../assets/image/memories.png"
             style="height: 36px; width: 36px"
             alt=""
           />
           <span>Memories</span>
         </li>
         <li>
-          <img
-            class="gneimcpu p9wrh9lq"
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/lVijPkTeN-r.png?_nc_eui2=AeGE1vwYEPxCjeddfF8ud-m3-5kYScafj0T7mRhJxp-PRDed3ZyR3P-iAAFGAfHr87PVzDCKsWyqXL_Eww76Zow0"
-            style="height: 36px; width: 36px"
-            alt=""
-          />
+          <svg
+            class="ml-1"
+            version="1.1"
+            id="Layer_1"
+            width="36"
+            height="30"
+            fill="red"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 122.59 122.88"
+            style="enable-background: new 0 0 122.59 122.88"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                d="M4.95,0h112.68c2.74,0,4.95,2.22,4.95,4.95v112.97c0,2.74-2.22,4.95-4.95,4.95c-1.37,0-2.61-0.56-3.51-1.46L61.16,75.79 L8.18,121.66c-2.06,1.78-5.18,1.56-6.97-0.5c-0.81-0.93-1.2-2.09-1.2-3.23H0V4.95C0,2.22,2.22,0,4.95,0L4.95,0z M112.68,9.91H9.91 v97.2l47.97-41.54c1.82-1.62,4.61-1.68,6.51-0.04l48.3,41.61V9.91L112.68,9.91z"
+              />
+            </g>
+          </svg>
           <span>Saved</span>
         </li>
       </ul>
@@ -98,6 +113,9 @@ export default {
 </script>
 
 <style lang="scss">
+.ml-1 {
+  margin-left: 1rem !important;
+}
 .left-sidebars ul li {
   display: flex;
   align-items: center;
