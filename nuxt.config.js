@@ -32,4 +32,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  engines: {
+    node: "x.x.x", // Replace x.x.x with a supported Node.js version, e.g., "14.x"
+  },
 };
