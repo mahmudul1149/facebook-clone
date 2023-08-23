@@ -1,7 +1,7 @@
 # Facebook Clone
 This project is a Facebook clone built using HTML, CSS, SASS, Vue.js, and Nuxt.js. It features Google Authentication for secure login/logout functionality, and the back-end is powered by Google Firebase, providing a scalable and secure cloud-based infrastructure. The application is highly responsive and adaptable to different screen sizes, thanks to the use of vw unit and media query.
 ## Demo
-Live version of this site: https://facebook-clone001.netlify.app/
+Live version of this site: https://mahmudul-fb-clone.netlify.app/
 
 Here's working demo: 
 
