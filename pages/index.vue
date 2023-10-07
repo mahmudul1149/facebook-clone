@@ -127,7 +127,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: calc(100vh - 60px);
   background: #f0f2f5;
   z-index: 9999;
   position: relative;
